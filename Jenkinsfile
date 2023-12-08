@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                cat README.md
+                sh 'cat README.md'
             }
         }
         stage('Test') {
